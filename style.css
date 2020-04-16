@@ -1,0 +1,310 @@
+/* Add any CSS you need to this file. */
+
+body {
+  margin: 0;
+  font-family: Arial, Arial, Helvetica, sans-serif;
+  background-color: #d7c79e;
+  margin-left: 150px;
+}
+
+.topnavbar {
+  overflow: hidden;
+  background-color: #a35638;
+}
+
+.topnavbar a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 16px 18px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnavbar a:hover {
+  background-color: #1a0d00;
+  color: white;
+}
+
+.topnavbar a.home, a.contact, a.about {
+  color: white;
+  margin-top: 9px;
+}
+
+.topnavbar a.user, a.cart{
+  color: white;
+  margin-top: 9px;
+  float: right;
+  margin-right: 10px;
+}
+
+.topnavbar .icon{
+  margin-top: 9px;
+  display: none;
+}
+
+@media screen and (max-width: 680px){
+  .topnavbar a:not(:first-child), .catalogdropdown .btn {
+    display: none;}
+  .topnavbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .topnavbar.responsive {position: relative;}
+  .topnavbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnavbar.responsive a{
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnavbar.responsive .catalogdropdown{
+    float: none;
+  }
+  .topnavbar.responsive .catalogdropdown-content{
+    position: relative;
+  }
+  .topnavbar.responsive .catalogdropdown .btn{
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.catalogdropdown .btn{
+  margin-top: 9px;
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 16px 18px;
+  background-color: inherit;
+}
+
+.catalogdropdown button:hover{
+  background-color: #1a0d00;
+  color: white;
+}
+
+.logo{
+  width: 20px;
+}
+ .catalogdropdown{
+  float: left;
+  overflow: hidden;
+ }
+
+.catalogdropdown-content{
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.catalogdropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.catalogdropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.catalogdropdown:hover .catalogdropdown-content {
+  display: block;
+  background-color: #009933;
+}
+
+.catalogdropdown-content .modern:hover{
+  background-color: gray;
+}
+
+.catalogdropdown-content .classic:hover{
+  background-color: #663300;
+}
+
+.catalogdropdown-content .custom:hover{
+  background-color: #cc0044;
+}
+
+.catalogdropdown-content .gates:hover{
+  background-color: darkgoldenrod;
+}
+
+.currentcollection{
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.currentcollection-image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.currentcollection-text{
+  position: absolute;
+  background: #e08f62;
+  background: rgba(224, 143, 98, 0.5); 
+  color: #f1f1f1;
+  width: 100%;
+  /* padding-top: 20px;
+  padding-right: 0px;
+  padding-left: 20px;
+  padding-bottom: 20px; */
+  bottom: 0;
+}
+
+.currentcollection-text h1,p{
+  padding-left: 10px;
+}
+
+h2{
+  margin-top: 30px;
+  margin-left: 95px;
+}
+
+.item-container{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 95px;
+}
+
+.item-card{
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+
+.item-photo{
+  background-color: white;
+  width: 255px;
+  height: 300px;
+  text-align: center;
+  border: solid;
+  border-width: 1px;
+}
+
+.item-photo img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.item-info{
+  float: left;
+  border: solid;
+  border-width: 1px;
+  border-color: gray;
+  padding-top: 5px;
+  padding-left: 5px;
+  background-color: white;
+  width: 153px;
+  height: 40px;
+}
+
+.item-info p, h7{
+  margin-top: 0px;
+}
+
+.cartbutton{
+  /* margin-top: 7px;
+  margin-right: 9px; */
+  background-color: #e08f62;
+  text-align: center;
+  border: solid;
+  height: 47px;
+  border-width: 1px;
+  cursor: pointer;
+}
+
+.sidebar{
+  height: 100%;
+  width: 150px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #9dab86;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  padding: 6px 8px 6px 16px;
+  font-size: 25px;
+  color: #d7c79e;
+  display: block;
+}
+
+.sidebar button{
+  text-align: left;
+  border: none;
+  background-color: #9dab86;
+  padding: 6px 8px 6px 16px;
+  font-size: 25px;
+  color: #d7c79e;
+  display: block;
+}
+
+.sidebar a:hover, .sidebar button:hover {
+  color: gray;
+}
+
+footer{
+  position: relative;
+  width: 100%;
+  height: 150px;
+  left: 0;
+  bottom: 0;
+  background-color: #a35638;
+}
+.subscribe{
+  float: left;
+  margin-left: 20px;
+}
+
+.subscribe h3{
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+.subscribe input{
+  margin-left: 33px;
+}
+
+.subscribe button{
+  border: none;
+  width:70px;
+  height: 21px;
+  background-color: #e08f62;
+  text-align: center;
+}
+
+.social{
+  float: right;
+  margin-right: 20px;
+}
+
+.social h3{
+  margin-left: 55px;
+  padding-top: 30px;
+  padding-right: 30px;
+}
+
+.social i{
+  text-decoration: none;
+  font-size: 40px;
+  margin-right: 23px;
+}
