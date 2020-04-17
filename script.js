@@ -4,12 +4,12 @@ function Gate() {
     // document.querySelectorAll("#door").style.visibility = "hidden";
     // document.querySelectorAll("#gate").style.visibility = "visible";
     var door = document.querySelectorAll(".door");
-    for(var i = 0; i < door.length; i++){
+    for (var i = 0; i < door.length; i++) {
         door[i].style.display = 'none';
     }
 
     var gate = document.querySelectorAll(".gate");
-    for(var i = 0; i < gate.length; i++){
+    for (var i = 0; i < gate.length; i++) {
         gate[i].style.display = 'initial';
     }
 }
@@ -24,11 +24,21 @@ function All() {
     document.querySelectorAll("#door").style.visibility = "visible";
 }
 
-function myFunction() {
+function responsive() {
     var x = document.getElementById("topnavbar");
     if (x.className === "topnavbar") {
-      x.className += " responsive";
+        x.className += " responsive";
     } else {
-      x.className = "topnavbar";
+        x.className = "topnavbar";
     }
-  }
+}
+
+function Order() {
+    document.getElementById('ordernum-label').style.display = "initial";
+    document.getElementById('ordernum').style.display = "initial";
+}
+
+function notOrder() {
+    document.getElementById('ordernum-label').style.display = "none";
+    document.getElementById('ordernum').style.display = "none";
+}

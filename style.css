@@ -75,6 +75,7 @@ body {
     width: 100%;
     text-align: left;
   }
+  
 }
 
 .catalogdropdown .btn{
@@ -160,10 +161,6 @@ body {
   background: rgba(224, 143, 98, 0.5); 
   color: #f1f1f1;
   width: 100%;
-  /* padding-top: 20px;
-  padding-right: 0px;
-  padding-left: 20px;
-  padding-bottom: 20px; */
   bottom: 0;
 }
 
@@ -218,8 +215,6 @@ h2{
 }
 
 .cartbutton{
-  /* margin-top: 7px;
-  margin-right: 9px; */
   background-color: #e08f62;
   text-align: center;
   border: solid;
@@ -262,29 +257,27 @@ h2{
   color: gray;
 }
 
-footer{
-  position: relative;
-  width: 100%;
-  height: 150px;
-  left: 0;
-  bottom: 0;
-  background-color: #a35638;
-}
-.subscribe{
-  float: left;
-  margin-left: 20px;
+.footerbar{
+	background-color: #a35638;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 20px 100px 90px 100px;
+	margin-top: 80px;
 }
 
-.subscribe h3{
-  padding-top: 30px;
-  padding-left: 30px;
+.footerbar .footerbar-left,
+.footerbar .footerbar-right{
+	display: inline-block;
+	vertical-align: top;
 }
 
-.subscribe input{
-  margin-left: 33px;
+.footerbar .footerbar-left{
+	width: 30%;
 }
 
-.subscribe button{
+.footerbar .footerbar-left button{
   border: none;
   width:70px;
   height: 21px;
@@ -292,19 +285,170 @@ footer{
   text-align: center;
 }
 
-.social{
+.footerbar .footerbar-right{
+  width: 30%;
   float: right;
-  margin-right: 20px;
 }
 
-.social h3{
-  margin-left: 55px;
-  padding-top: 30px;
-  padding-right: 30px;
-}
-
-.social i{
+.footerbar i{
   text-decoration: none;
   font-size: 40px;
   margin-right: 23px;
+}
+
+.footerbar-icons{
+  margin-left: 10px;
+}
+
+.footerbar-about h3{
+  margin-left: 10px;
+}
+
+.footerbar-name{
+  margin-left: -10px;
+}
+
+@media screen and (max-width: 680px) {
+	.footerbar .footerbar-left,
+	.footerbar .footerbar-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+    text-align: center;
+    float: initial;
+	}
+}
+
+.contact-title{
+  margin-left: 60px;
+  margin-bottom: 50px;
+}
+
+#fname-label, #lname-label{
+  padding-top: 8px;
+  margin-left: 60px;
+}
+
+#fname, #lname{
+  margin-left: 10px;
+  width: 350px;
+  line-height: 30px;
+}
+
+#email{
+  margin-top: 30px;
+  margin-left: 10px;
+  width: 390px;
+  line-height: 30px;
+}
+
+#email-label{
+  padding-top: 8px;
+  margin-left: 60px;
+  margin-top: 30px;
+}
+
+#address{
+  margin-top: 30px;
+  margin-left: 10px;
+  width: 250px;
+  line-height: 30px;
+}
+
+#address-label{
+  padding-top: 8px;
+  margin-left: 60px;
+  margin-top: 30px;
+}
+
+#city-label{
+  padding-top: 8px;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+#city-input{
+  margin-top: 30px;
+  margin-left: 10px;
+  width: 130px;
+  line-height: 30px;
+}
+
+#province-label{
+  padding-top: 8px;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+#province-input{
+  margin-top: 30px;
+  margin-left: 10px;
+  width: 190px;
+  line-height: 30px;
+}
+
+#postal-label{
+  padding-top: 8px;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+#postal{
+  margin-top: 30px;
+  margin-left: 10px;
+  width: 130px;
+  line-height: 30px;
+}
+
+#phonenum-label{
+  padding-top: 8px;
+  margin-left: 60px;
+  margin-top: 30px;
+}
+
+#phonenum{
+  margin-top: 30px;
+  margin-left: 10px;
+  width: 227px;
+  line-height: 30px;
+}
+
+#phoned{
+  margin-left: 182px;
+}
+
+#ordernum{
+  display: none;
+  margin-top: 25px;
+  margin-left: 10px;
+  width: 250px;
+  line-height: 30px;
+}
+
+#ordernum-label{
+  display: none;
+  padding-top: 3px;
+  margin-left: 60px;
+  margin-top: 30px;
+}
+
+#message{
+  margin-top: 5px;
+  margin-left: 60px;
+}
+
+#message-label{
+  padding-top: 3px;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+#submitbtn, #resetbtn{
+  margin-right: 100px;
+  float: right;
+  width: 100px;
+  height: 50px;
+  background-color: #9dab86;
+  border: solid;
+  border-color: #a35638;
 }

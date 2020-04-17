@@ -2,9 +2,117 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEB222 Store - Contact</title>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/358b4d95d6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="all.css">
   </head>
   <body>
+    <div class="topnavbar" id="topnavbar">
+      <a href="index.html"><img src="images/doorlogo.png" alt="" class="logo"></a>
+      <a class="home" href="index.html">Home Page <i class="fas fa-home"></i></a>
+      <a class="about" href="#about">About Us</a>
+      <a class="contact" href="contact.html">Contact Us <i class="fas fa-phone"></i></a>
+      <div class="catalogdropdown">
+        <button class="btn">Catalog
+          <i class="fas fa-angle-down"></i>
+        </button>
+        <div class="catalogdropdown-content">
+          <a class="classic" href="#">Classic Doors</a>
+          <a class="modern" href="#">Modern Doors</a>
+          <a class="custom" href="#">Custom Doors</a>
+          <a class="gates" href="#">Gates</a>
+        </div>
+      </div>
+      <a class="cart" href="#">Cart <i class="fas fa-shopping-cart"></i></a>
+      <a class="user" href="#">Sign in <i class="far fa-user"></i></a>
+      <a href="javascript:void(0);" class="icon" onclick="responsive()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <div class="sidebar">
+      <a href="index.html">Home <i class="fas fa-home"></i></a>
+      <a href="contact.html">Contact <i class="fas fa-phone"></i></a>
+    </div>
+
+    <h2 class="contact-title">Please Enter Your Contact Information</h2>
+    <form id="data" action="https://httpbin.org/post" method="post">
+      <label id="fname-label" for="first-name">First Name</label>
+      <input id="fname" type="text" name="first-name" required placeholder="First Name...">
+
+      <label id="lname-label" for="last-name">Last Name</label>
+      <input id="lname" type="text" name="last-name" required placeholder="Last Name...">
+      <br>
+      <label id="email-label" for="email">Email</label>
+      <input id="email" type="email" name="email" required placeholder="Email...">
+      <br>
+      <label id="address-label" for="address">Address</label>
+      <input id="address" type="text" name="address" required placeholder="Address...">
+    
+      <label id="city-label" for="city">City</label>
+      <input list="city" name="city", id="city-input" placeholder="City...">
+      <datalist id="city">
+        <option value="Charlottetown"></option>
+        <option value="Edmonton"></option>
+        <option value="Fredericton"></option>
+        <option value="Halifax"></option>
+        <option value="Iqaluit"></option>
+        <option value="Ottawa"></option>
+        <option value="Quebec City"></option>
+        <option value="Regina"></option>
+        <option value="St. John's"></option>
+        <option value="Toronto"></option>
+        <option value="Victoria"></option>
+        <option value="Whitehorse"></option>
+        <option value="Winnipeg"></option>
+        <option value="Yellowknife"></option>
+      </datalist>
+
+      <label id="province-label" for="province">Province</label>
+      <input list="province" name="province", id="province-input" placeholder="Province...">
+      <datalist id="province">
+        <option value="Ontario"></option>
+        <option value="Quebec"></option>
+        <option value="Nova Scotia"></option>
+        <option value="New Brunswick"></option>
+        <option value="Manitoba"></option>
+        <option value="British Columbia"></option>
+        <option value="Prince Edward Island"></option>
+        <option value="Saskatchewan"></option>
+        <option value="Alberta"></option>
+        <option value="Newfoundland and Labrador"></option>
+      </datalist>
+      
+      <label id="postal-label" for="postal">Postal Code</label>
+      <input id="postal" type="text" name="postal" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" required title="A valid Canadian Postal Code" placeholder="A1B 2C3">
+      <br>
+      <label id="phonenum-label" for="phonenum">Phone Number</label>
+      <input id="phonenum" type="tel" name="phonenum" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required title="A valid Canadian Number" placeholder="0123456789">
+      <br>
+      <input type="checkbox" id="phoned" name="phoned" value="yes-phone">
+      <label for="phoned">Would you like to be phoned?</label>
+      <br>
+      <p>Purpose: </p>
+      <input type="radio" id="question" name="purpose" value="question" onclick="notOrder()">
+      <label for="question">Question</label><br>
+      <input type="radio" id="comment" name="purpose" value="comment" onclick="notOrder()">
+      <label for="comment">Comment</label><br>
+      <input type="radio" id="order" name="purpose" value="order" onclick="Order()">
+      <label for="order">Order Problem</label>
+      <br>
+      <label id="ordernum-label" for="ordernum">Order Number</label>
+      <input id="ordernum" type="text" name="ordernum" placeholder="Order Number...">
+      <br>
+      <p id="message-label">Message</p>
+      <textarea name="message" id="message" rows="8" cols="60" ></textarea>
+      <input type="hidden" id="studentname" name="studentname" value="QuanPham-121233191">
+      <br>
+      <input type="submit" id="submitbtn" value="Submit">
+      <input type="reset" id="resetbtn" value="Reset">
+    </form>
     <!--    
 
     Part 2: Contact Us Page
@@ -40,4 +148,30 @@
     all data defined in the form above (e.g., visible and hidden fields).
 
   --></body>
+
+  <footer class="footerbar">
+
+    <div class="footerbar-left">
+      <h3>Subscribe for design update</h3>
+  
+      <input id="Email" type="email" name="email" placeholder="email address goes here">
+      <button><b>Sign up</b></button>
+  
+      <p class="footerbar-name">© 2145 KnockKnock Design Ltd.</p>
+    </div>
+  
+    <div class="footerbar-right">
+      <div class="footerbar-about">
+        <h3>About the KnockKnock Design</h3>
+        <p>We offer designs and build doors, gates, lockers, etc along with building courses so you can also build your
+          very own one.</p>
+      </div>
+      <div class="footerbar-icons">
+        <a href=""><i class="fab fa-facebook-square"></i></a>
+        <a href=""><i class="fab fa-twitter-square"></i></a>
+        <a href=""><i class="fab fa-instagram-square"></i></a>
+        <a href=""><i class="fas fa-envelope-square"></i></a>
+      </div>
+    </div>
+  </footer>
 </html>
