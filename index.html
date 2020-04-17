@@ -49,21 +49,17 @@
     <a href="index.html">Home <i class="fas fa-home"></i></a>
     <a href="#currentcollection-text">Current Collection</a>
     <a href="#lastestdesign">Latest Desgins <i class="fas fa-angle-down"></i></a>
-    <div class="latestdropdown">
-      <!-- <a href="">All</a> -->
-      <button onclick="All()">All</button>
-      <!-- <a href="">Doors</a> -->
-      <button onclick="Door()">Doors</button>
-      <!-- <a href="">Garden Gates</a> -->
-      <button onclick="Gate()">Garden Gates</button>
-    </div>
+    <a href="#lastestdesign" onclick="All()">All</a>
+    <a href="#lastestdesign" onclick="Door()">Door</a>
+    <a href="#lastestdesign" onclick="Gate()">Gates</a>
     <a href="contact.html">Contact <i class="fas fa-phone"></i></a>
   </div>
 
   <h2>Latest Desgins</h2>
-
+  <h3 id="door-title">Door Collection</h3>
+  <h3 id="gate-title">Gate Collection</h3>
   <div class="item-container" id="lastestdesign">
-    <div class="item-card" class="door">
+    <div class="item-card" id="door">
       <div class="item-photo">
         <img src="images/classic1.jpg">
       </div>
@@ -74,7 +70,7 @@
       </div>
     </div>
 
-    <div class="item-card" class="door">
+    <div class="item-card" id="door">
       <div class="item-photo">
         <img src="images/bythesea.jpg">
       </div>
@@ -85,7 +81,7 @@
       </div>
     </div>
 
-    <div class="item-card" class="gate">
+    <div class="item-card" id="gate">
       <div class="item-photo">
         <img src="images/goldengate.jpg">
       </div>
@@ -96,7 +92,7 @@
       </div>
     </div>
 
-    <div class="item-card" class="door">
+    <div class="item-card" id="door">
       <div class="item-photo">
         <img src="images/bgo.jpg">
       </div>
@@ -107,7 +103,7 @@
       </div>
     </div>
 
-    <div class="item-card" class="gate">
+    <div class="item-card" id="gate">
       <div class="item-photo">
         <img src="images/jpstyle.jpg">
       </div>
@@ -118,7 +114,7 @@
       </div>
     </div>
 
-    <div class="item-card" class="door">
+    <div class="item-card" id="door">
       <div class="item-photo">
         <img src="images/thesun.jpg">
       </div>
@@ -129,7 +125,7 @@
       </div>
     </div>
 
-    <div class="item-card" class="gate">
+    <div class="item-card" id="gate">
       <div class="item-photo">
         <img src="images/classicwhite.jpg">
       </div>
@@ -140,7 +136,7 @@
       </div>
     </div>
 
-    <div class="item-card" class="gate">
+    <div class="item-card" id="gate">
       <div class="item-photo">
         <img src="images/thearch.jpg">
       </div>
@@ -151,7 +147,7 @@
       </div>
     </div>
 
-    <div class="item-card" class="door">
+    <div class="item-card" id="door">
       <div class="item-photo">
         <img src="images/woodnglass.jpg">
       </div>
@@ -162,7 +158,7 @@
       </div>
     </div>
 
-    <div class="item-card" class="gate">
+    <div class="item-card" id="gate">
       <div class="item-photo">
         <img src="images/barsandmetal.jpg">
       </div>
@@ -173,7 +169,7 @@
       </div>
     </div>
 
-    <div class="item-card" class="gate">
+    <div class="item-card" id="gate">
       <div class="item-photo">
         <img src="images/barnslider.jpg">
       </div>

@@ -95,6 +95,7 @@
       <input type="checkbox" id="phoned" name="phoned" value="yes-phone">
       <label for="phoned">Would you like to be phoned?</label>
       <br>
+      <div id="purpose">
       <p>Purpose: </p>
       <input type="radio" id="question" name="purpose" value="question" onclick="notOrder()">
       <label for="question">Question</label><br>
@@ -102,6 +103,7 @@
       <label for="comment">Comment</label><br>
       <input type="radio" id="order" name="purpose" value="order" onclick="Order()">
       <label for="order">Order Problem</label>
+      </div>
       <br>
       <label id="ordernum-label" for="ordernum">Order Number</label>
       <input id="ordernum" type="text" name="ordernum" placeholder="Order Number...">

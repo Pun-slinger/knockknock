@@ -1,27 +1,24 @@
 /** Add any JavaScript you need to this file. */
 
 function Gate() {
-    // document.querySelectorAll("#door").style.visibility = "hidden";
-    // document.querySelectorAll("#gate").style.visibility = "visible";
-    var door = document.querySelectorAll(".door");
-    for (var i = 0; i < door.length; i++) {
-        door[i].style.display = 'none';
-    }
-
-    var gate = document.querySelectorAll(".gate");
-    for (var i = 0; i < gate.length; i++) {
-        gate[i].style.display = 'initial';
-    }
+    document.querySelectorAll("#door").forEach(element => element.style.display = 'none');
+    document.querySelectorAll("#gate").forEach(element => element.style.display = 'initial');
+    document.querySelectorAll("#gate-title").forEach(element => element.style.display = 'initial');
+    document.querySelectorAll("#door-title").forEach(element => element.style.display = 'none');
 }
 
 function Door() {
-    document.querySelectorAll("#gate").style.visibility = "hidden";
-    document.querySelectorAll("#door").style.visibility = "visible";
+    document.querySelectorAll("#door").forEach(element => element.style.display = 'initial');
+    document.querySelectorAll("#gate").forEach(element => element.style.display = 'none');
+    document.querySelectorAll("#door-title").forEach(element => element.style.display = 'initial');
+    document.querySelectorAll("#gate-title").forEach(element => element.style.display = 'none');
 }
 
 function All() {
-    document.querySelectorAll("#gate").style.visibility = "visible";
-    document.querySelectorAll("#door").style.visibility = "visible";
+    document.querySelectorAll("#door").forEach(element => element.style.display = 'initial');
+    document.querySelectorAll("#gate").forEach(element => element.style.display = 'initial');
+    document.querySelectorAll("#door-title").forEach(element => element.style.display = 'none');
+    document.querySelectorAll("#gate-title").forEach(element => element.style.display = 'none');
 }
 
 function responsive() {

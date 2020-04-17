@@ -177,6 +177,7 @@ h2{
   display: flex;
   flex-wrap: wrap;
   margin-left: 95px;
+  margin-top: 10px;
 }
 
 .item-card{
@@ -191,6 +192,15 @@ h2{
   text-align: center;
   border: solid;
   border-width: 1px;
+}
+
+#door,#gate{
+  display: initial;
+}
+
+#door-title,#gate-title{
+  margin-left: 95px;
+  display: none;
 }
 
 .item-photo img{
@@ -451,4 +461,67 @@ h2{
   background-color: #9dab86;
   border: solid;
   border-color: #a35638;
+}
+
+#purpose{
+  margin-left: 50px;
+}
+
+#question,#comment,#order{
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 680px) {
+	#fname,#lname,#email{
+		display: block;
+    width: 95%;
+    margin-top: 10px;
+		margin-bottom: 40px;
+    text-align: center;
+    float: initial;
+  }
+
+  #address{
+    width: 190px;
+  }
+
+  #fname-label,#lname-label{
+    margin-left: 20px;
+  }
+
+  #email-label,#address-label{
+    margin-left: 20px;
+  }
+
+  #postal{
+    width: 65px;
+  }
+
+  #phonenum-label{
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  #phonenum{
+    margin-bottom: 20px;
+  }
+
+  #phoned{
+    margin-left: 20px;
+  }
+
+  #purpose{
+    margin-left: 10px;
+  }
+
+  #message-label{
+    margin-left: 10px;
+  }
+
+  #message{
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  
 }
